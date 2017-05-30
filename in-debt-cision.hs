@@ -5,7 +5,7 @@ type TotalMonths = Int
 type TotalInterest = Float
 
 data Loan = Loan Principle Rate MinPayment TotalMonths TotalInterest deriving Show
---
+
 interest :: Principle -> Rate -> Float
 interest p r = r/12*p
 
@@ -28,10 +28,10 @@ payOffLoans extraCash (l:ls)
 	| principle l <= extraCash = payOffLoans (extraCash + minpayment l) ((map applyMinPayment ls) ++ [(applyLastPayment l)]) --put paid off loan at end of list 
 	| otherwise = payOffLoans extraCash ((applyBigPayment extraCash l):map applyMinPayment ls)
 		where principle (Loan p _ _ _ _) = p;
-					minpayment (Loan _ _ mp _ _) = mp
+	              minpayment (Loan _ _ mp _ _) = mp
 
 mainFunc :: Float -> [Loan] -> String 
 mainFunc xc ls = (output . map outcome . payOffLoans xc) ls
 	where outcome (Loan _ _ _ tm ti) = (tm, ti); 
-				output xs = "It would take you " ++ show (fst (last xs)) ++ " months to pay off your debts and cost you $" ++ show (foldr (\(_, i) acc -> acc+i) 0 xs) ++ 
-					" if you did the debt snowball in the given order. Reorder your loans to see if there's a more efficient way!"
+	      output xs = "It would take you " ++ show (fst (last xs)) ++ " months to pay off your debts and cost you $" ++ show (foldr (\(_, i) acc -> acc+i) 0 xs) ++ 
+	      	" if you did the debt snowball in the given order. Reorder your loans to see if there's a more efficient way!"
