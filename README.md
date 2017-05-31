@@ -16,3 +16,4 @@ Reorder your loans to see if there's a more efficient way!"`
 This example would assume you have something like a $10,000 car loan with 4.7% interest with a minimum payment of $200 
 and a $15,000 student loan with an interest rate of 6% and a $50 minimum payment. 
 And that you have an extra $1000/month to put towards your debt. 
+The two 0's at the end of the Loans is for months and interest paid on the loan. If you want a grand total for the entire life of the loan you can put how many months you've had the loan and the interest you've already paid instead of zeros. 
