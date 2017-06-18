@@ -6,7 +6,10 @@ Although it's not as polished in that it won't give you different ways to pay of
 You have to reorder them yourself to find out what's more efficient and 
 it doesn't take user input so you have to load the module and call the function manually through ghci
 
+
 &#36;`sudo apt-get install ghc`<br>
+&#36;`git clone git@github.com:cotterjd/in-debt-cision.git`<br>
+$#36;`cd in-debt-cision`<br>
 &#36;`ghci`<br>
 &gt;`:load in-debt-cision.hs`<br>
 &gt;`mainFunc 1000 [(Loan 10000 0.047 200 0 0), (Loan 15000 0.06 50 0 0)]`<br>
