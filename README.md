@@ -1,5 +1,5 @@
 # in-debt-cision
-Tool to find most efficient way of paying off loans written in haskell
+Tool to find most efficient way of paying off loans. Basically my DebtPayingAlgorithms program, but rewritten in Haskell
 
 This is a rough haskell version of my DebtPayingAlgorithms that I wrote in C#.
 Although it's not as polished in that it won't give you different ways to pay off your debts. 
