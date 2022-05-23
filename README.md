@@ -1,5 +1,7 @@
 # in-debt-cision
-Tool to find most efficient way of paying off loans. Basically my <a href="https://github.com/cotterjd/DebtPayingAlgorithms">DebtPayingAlgorithms</a> program, but rewritten in Haskell
+Tool to find most efficient way of paying off debt. Basically my <a href="https://github.com/cotterjd/DebtPayingAlgorithms">DebtPayingAlgorithms</a> program, but rewritten in Haskell. 
+
+Spoiler: the snowball method (paying off smallest loans first) works the best in most cases, but of course it depends on your specific loans, which is why this tool exists.
 
 This is a rough haskell version of my DebtPayingAlgorithms that I wrote in C#.
 Although it's not as polished in that it won't give you different ways to pay off your debts. 
