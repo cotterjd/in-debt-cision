@@ -41,4 +41,4 @@ mainFunc :: Float -> [Loan] -> String
 mainFunc xc ls = (output . map outcome . payOffLoans xc) ls
   where outcome (Loan _ _ _ tm ti) = (tm, ti); 
         output xs = "It would take you " ++ show (fst (last xs)) ++ " months to pay off your debts and cost you $" ++ show (foldr (\(_, i) acc -> acc+i) 0 xs) ++ 
-          " if you did the debt snowball in the given order. Reorder your loans to see if there's a more efficient way!"
+          " if you paid your debt in the given order. Reorder your loans to see if there's a more efficient way!"
